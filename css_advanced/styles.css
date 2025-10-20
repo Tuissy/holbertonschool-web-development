@@ -1,0 +1,201 @@
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  color: #fff;
+  background: #0b0e19; /* fondo oscuro global */
+}
+
+img { max-width: 100%; display: block; }
+
+/* Paleta aproximada a la maqueta */
+:root{
+  --accent: #C271FF;      /* morado para detalles */
+  --accent-2: #98E1FF;    /* azulito suave */
+  --btn-bg: #C271FF;
+  --btn-text: #fff;
+  --muted: #cbd5e1;       /* texto secundario */
+  --overlay: rgba(13,16,28,.55);  /* overlay hero */
+}
+
+/* =============== Header =============== */
+header{
+  position: absolute;
+  z-index: 2;
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a img{ height: 28px; } /* logo */
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .2px;
+  opacity: .9;
+}
+nav a:hover{ opacity: 1; }
+
+/* =============== HERO (primera section) =============== */
+
+section[aria-labelledby="hero-title"]{
+  position: relative;
+  padding-top: 80px;         /* separa del header */
+  padding-bottom: 120px;     /* espacio bajo título */
+  background:
+    url("../html_advanced/images/hero.png") center/cover no-repeat;
+}
+
+/* Contenedor interno del hero (OJO: con espacio) */
+section[aria-labelledby="hero-title"] .hero{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  /* centrado robusto de sus hijos (h1 y .hero-cta) */
+  display: grid;
+  justify-items: center;
+  text-align: center;
+
+}
+
+/* Título grande */
+#hero-title{
+  font-size: clamp(40px, 6vw, 96px);
+  line-height: 1.1;
+  margin: 24px 0 12px;
+  font-weight: 800;
+}
+
+/* CTA: pill arriba, botón abajo, centrados */
+.hero-cta{
+  margin-top: 28px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* PILL con 3 palabras */
+.hero-tags{
+  display: flex;
+  gap: 40px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+  width: max-content;    /* no se estira */
+}
+.hero-tags .tag{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1;
+  white-space: nowrap;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* Botón morado */
+.btn-primary{
+  appearance: none;
+  border: 0;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #C271FF;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =============== Sub-bloque “Learn from the pros” + cards =============== */
+section[aria-labelledby="hero-title"] .showcase{
+  max-width: 1100px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+  text-align: center;
+  font-weight: 100;
+}
+section[aria-labelledby="hero-title"] .accent {
+    color: #C271FF; 
+    font-weight: 700;
+}
+
+section[aria-labelledby="hero-title"] .showcase h2{
+  margin: 0 0 24px;
+  font-size: clamp(18px, 2.6vw, 28px);
+  font-weight: 300;
+  background-clip: text;
+}
+
+/* Cards (4 mentores) */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 28px;
+}
+
+/* Tarjeta */
+.card{
+  background: transparent;
+  padding: 18px 18px 22px;
+}
+
+/* Foto redonda tipo avatar */
+.card img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+}
+
+/* Nombre y subtítulo */
+.card h3{
+  margin: 6px 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card .subtitle{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 960px){
+  .cards{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px){
+  .cards{ grid-template-columns: 1fr; }
+  header{ padding: 16px; }
+  section[aria-labelledby="hero-title"]{ padding-bottom: 80px; }
+}
