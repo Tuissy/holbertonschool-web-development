@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ADVANCED</title>
+</head>
+<body>
+    <header>
+        <a href="/" aria-label="Home">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+                <li><a href="#link3">Link 3</a></li>
+            </ul>
+    </nav>
+    </header>
+    <main>
+        <section aria-labelledby="hero-title">
+            <div class="hero">
+                <h1 id="hero-title">Title</h1>
+                <p>3 words</p>
+                <button type="button">Button</button>
+            </div>
+
+            <div class="showcase">
+                <h2>Title</h2>
+
+                <div class="cards">
+                    <article class="card">
+                    <img src="images/item1.jpg" alt="Item 1 image">
+                    <h3>Name 1</h3>
+                    <p class="subtitle">Sub-title 1</p>
+                    </article>
+
+                    <article class="card">
+                    <img src="images/item2.jpg" alt="Item 2 image">
+                    <h3>Name 2</h3>
+                    <p class="subtitle">Sub-title 2</p>
+                    </article>
+
+                    <article class="card">
+                    <img src="images/item3.jpg" alt="Item 3 image">
+                    <h3>Name 3</h3>
+                    <p class="subtitle">Sub-title 3</p>
+                    </article>
+
+                    <article class="card">
+                    <img src="images/item4.jpg" alt="Item 4 image">
+                    <h3>Name 4</h3>
+                    <p class="subtitle">Sub-title 4</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="quote" aria-label="Quote">
+            <div class="quote-block">
+                <img src="images/quote.jpg" alt="Illustration for the quote">
+                <div class="quote-content">
+                    <blockquote>
+                        <p>“Quote”</p>
+                    </blockquote>
+                    <p class="author">Author</p>
+                    <p class="subtitle">Sub-title</p>
+                </div>
+            </div>
+        </section>
+        <section class="videos" aria-labelledby="videos-title">
+            <h1 id="videos-title">Videos</h1>
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <article class="video">
+                    <img src="images/video1.jpg" alt="Video 1 thumbnail">
+                    <h2>Video Title 1</h2>
+                    <p>Text 1</p>
+
+                    <div class="author">
+                        <img src="images/author1.jpg" alt="Author 1 portrait">
+                        <h3>Author Name 1</h3>
+                    </div>
+
+                    <div class="rating" aria-label="Rating for Video 1">
+                        <div class="stars" aria-hidden="true">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                        </div>
+                        <p>5/5 stars</p>
+                    </div>
+                </article>
+
+                <!-- Video 2 -->
+                <article class="video">
+                    <img src="images/video2.jpg" alt="Video 2 thumbnail">
+                    <h2>Video Title 2</h2>
+                    <p>Text 2</p>
+
+                    <div class="author">
+                        <img src="images/author2.jpg" alt="Author 2 portrait">
+                        <h3>Author Name 2</h3>
+                    </div>
+
+                    <div class="rating" aria-label="Rating for Video 2">
+                        <div class="stars" aria-hidden="true">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                        </div>
+                        <p>5/5 stars</p>
+                    </div>
+                </article>
+
+                <!-- Video 3 -->
+                <article class="video">
+                    <img src="images/video3.jpg" alt="Video 3 thumbnail">
+                    <h2>Video Title 3</h2>
+                    <p>Text 3</p>
+
+                    <div class="author">
+                        <img src="images/author3.jpg" alt="Author 3 portrait">
+                        <h3>Author Name 3</h3>
+                    </div>
+
+                    <div class="rating" aria-label="Rating for Video 3">
+                        <div class="stars" aria-hidden="true">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                        </div>
+                        <p>5/5 stars</p>
+                    </div>
+                </article>
+
+                <!-- Video 4 -->
+                <article class="video">
+                    <img src="images/video4.jpg" alt="Video 4 thumbnail">
+                    <h2>Video Title 4</h2>
+                    <p>Text 4</p>
+
+                    <div class="author">
+                        <img src="images/author4.jpg" alt="Author 4 portrait">
+                        <h3>Author Name 4</h3>
+                    </div>
+
+                    <div class="rating" aria-label="Rating for Video 4">
+                        <div class="stars" aria-hidden="true">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                            <img src="images/star.png" alt="">
+                        </div>
+                        <p>5/5 stars</p>
+                    </div>
+                </article>
+            </div>
+        </section >
+        <section class="membership" aria-labelledby="membership-title">
+            <h1 id="membership-title">Membership</h1>
+
+            <div class="membership-grid">
+                <article class="block">
+                    <img src="images/block1.jpg" alt="Block 1 image">
+                    <h2>Title</h2>
+                    <p>Text</p>
+                </article>
+
+                <article class="block">
+                    <img src="images/block2.jpg" alt="Block 2 image">
+                    <h2>Title</h2>
+                    <p>Text</p>
+                </article>
+
+                <article class="block">
+                    <img src="images/block3.jpg" alt="Block 3 image">
+                    <h2>Title</h2>
+                    <p>Text</p>
+                </article>
+
+                <article class="block">
+                    <img src="images/block4.jpg" alt="Block 4 image">
+                    <h2>Title</h2>
+                    <p>Text</p>
+                </article>
+            </div>
+            <button type="button">Button</button>
+        </section>
+        <section class="faq" aria-labelledby="faq-title">
+            <h1 id="faq-title">FAQ</h1>
+
+            <div class="faq-rows">
+                <!-- Row 1 -->
+                <div class="faq-row">
+                    <article class="faq-item">
+                        <h2>Title 1</h2>
+                        <p>Text 1</p>
+                    </article>
+                    <article class="faq-item">
+                        <h2>Title 2</h2>
+                        <p>Text 2</p>
+                    </article>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="faq-row">
+                    <article class="faq-item">
+                        <h2>Title 3</h2>
+                        <p>Text 3</p>
+                    </article>
+                    <article class="faq-item">
+                        <h2>Title 4</h2>
+                        <p>Text 4</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <img src="images/logo-footer.png" alt="Site logo">
+
+                <div class="footer-links">
+                    <a href="#" aria-label="Twitter">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-text">Text</p>
+        </div>
+    </footer>
+</body>
+</html>
