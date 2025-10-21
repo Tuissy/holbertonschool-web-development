@@ -55,7 +55,7 @@ section[aria-labelledby="hero-title"]{
   padding-top: 80px;         
   padding-bottom: 120px;     
   background:
-    url("../html_advanced/images/hero.png") center/cover no-repeat;
+    url("images/hero.png") center/cover no-repeat;
 }
 
 
